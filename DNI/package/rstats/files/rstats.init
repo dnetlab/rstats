@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+
+SERVIECE_USE_PID=1
+
+START=88
+
+start() {
+	service_start /usr/sbin/rstats
+}
+
+stop() {
+	service_stop /usr/sbin/rstats
+}
